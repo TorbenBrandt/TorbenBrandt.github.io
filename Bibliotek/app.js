@@ -1,6 +1,6 @@
 // @ts-check
 
-const CONNECTSTRING = "postgres://butikk:123@localhost/butikk";
+const CONNECTSTRING = "postgres://bib:123@localhost/bib";
 
 const PORT = 3000;
 
@@ -20,6 +20,9 @@ app.use(bodyParser.json());
 app.get("/", function (req, res) {
   res.send({ msg: "ok" });
 });
+app.get("/Torben", function (req, res) {
+  res.send({ msg: "Halloen" });
+});
 
 app.post("/runsql", function (req, res) {
   let data = req.body;
@@ -27,7 +30,8 @@ app.post("/runsql", function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log(`Quiz server started on port ${PORT}`);
+  console.log(`Serveren min har startet på port ${PORT}
+  Du kan koble deg til på http://localhost:${PORT}`);
 });
 
 async function runsql(res, obj) {
