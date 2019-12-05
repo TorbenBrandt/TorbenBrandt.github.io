@@ -20,6 +20,7 @@
         <li data-link="bok">Registrer bok</li>
         <li data-link="laaner">Registrer låner</li>
         <li data-link="utlaan">Registrer utlån</li>
+        <li data-link="eksemplar">Registrer eksemplar</li>
     </home-bar>
 
     <div id="main">
@@ -37,7 +38,7 @@
 
         <!-- angi feltnavn du ønsker å bruke i fields=""  -->
         <db-insert id="form" 
-                fields="innlevert"
+                fields="innlevert:checkbox"
                 foreign="laaner.laanerid:fornavn" 
                 table="utlaan">
             <span slot="heading">Registrer Utlån</span>

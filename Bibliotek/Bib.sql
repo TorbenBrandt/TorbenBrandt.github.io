@@ -1,4 +1,4 @@
-drop table bok,laaner,utlaan,eksemplar,forfatter cascade;
+--drop table bok,laaner,utlaan,eksemplar,forfatter cascade;
 
 
 
